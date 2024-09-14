@@ -1,10 +1,11 @@
 import random
+import re
 def guess_the_number():
     selected_num = random.randint(1,100) 
     #return selected_num: This was a check in the beginning 
     while True:
         user_guess = input("Guess the number; it must be an integer: ")
-        if '.' in user_guess:
+        if '.' in user_guess or re.search("[a-z]",user_guess):
             print("Invalid guess, please guess an integer")
             continue
         if int(user_guess) > int(selected_num):
