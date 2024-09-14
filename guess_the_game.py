@@ -1,3 +1,4 @@
+import random
 def guess_the_number():
     selected_num = random.randint(1,100) 
     #return selected_num: This was a check in the beginning 
