@@ -1,9 +1,10 @@
 import random
 def roll_the_dice():
+    #Do the loop while it is true
     while True:
-         dice_roll = random.randint(1,6)
+         dice_roll = random.randint(1,6) # chose a number between 1-6 randomly
          print(f"you got {dice_roll}")
-         replay=input("Do you want to play again? (y/n): ")
+         replay=input("Do you want to play again? (y/n): ") # Asking user if they want to play again
          if replay == "y":
             continue
          elif replay == "n":
