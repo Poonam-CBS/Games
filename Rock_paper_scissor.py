@@ -16,7 +16,7 @@ def rock_paper_scisor():#the function beigins for the game
                 return
             else: #anything other than y or n
                 print("invalid response! exiting the game! See you next time")
-                returnsq
+                return
             
 
         #block to determine computer's response
