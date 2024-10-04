@@ -1,18 +1,20 @@
+#May the force be wth you
+""" Through this code we play a game to guess a random number between 1 and 100"""
 import random
 import re
 def guess_the_number():
-    selected_num = random.randint(1,100) 
+    selected_num=random.randint(1,100) 
     #return selected_num: This was a check in the beginning 
     while True:
-        user_guess = input("Guess the number; it must be an integer: ")
+        user_guess=input("Guess the number; it must be an integer between 1 and 100: ")
         if '.' in user_guess or re.search("[a-z]",user_guess): #This is to avoid real number and alphabets
             print("Invalid guess, please guess an integer")
             continue
-        if int(user_guess) > int(selected_num): #If the guessed number is higher than the selected number
+        if int(user_guess)> int(selected_num): #If the guessed number is higher than the selected number
             print("Too high")
-        elif int(user_guess) < int(selected_num): #If the guesses number is lower than the selected number
+        elif int(user_guess) <int(selected_num): #If the guesses number is lower than the selected number
             print("Too low!!") 
-        else: #user_guess = selected_num #If the guessed number is equal to the seceted number
+        else: #user_guess =selected_num #If the guessed number is equal to the seceted number
             print("Congratulations! you guessed it right!!")
             return
     return
