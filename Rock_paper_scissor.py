@@ -1,3 +1,5 @@
+#May the Force be with you!
+"""This is a code to play the game rock paper scisor"""
 import random  #import random for random number generation
 def rock_paper_scisor():#the function beigins for the game
     while True:  #start an infinite loop
